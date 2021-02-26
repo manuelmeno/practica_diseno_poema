@@ -13,28 +13,31 @@ pre{
 {
     
     background-color: rgb(200, 100, 100);
-    font-weight: 100;
+    font-weight: 400;
+    font-style: italic;
 }
 #segundoparrafo
 {
  
     background-color: rgb(205,110, 110);
-    font-weight: 100;
+    font-weight: 400;
     font-style: italic;
 }
 #tercerparrafo
 {
     background-color: rgb(210, 120, 120);
-    font-weight: 300;
+    font-weight: 400;
+    font-style: italic;
 }
 #cuartoparrafo{
     background-color: rgb(215, 130, 130);
-    font-weight:300;
+    font-weight: 400;
     font-style: italic;
 }
 #quintoparrafo{
     background-color: rgb(220,140, 140);
     font-weight: 400;
+    font-style: italic;
 }
 
 #sextoparrafo
@@ -43,3 +46,60 @@ pre{
     font-weight: 400;
     font-style: italic;
 }
+
+
+h3
+{
+    float: left;
+    color:black;
+    position: relative;
+}
+h3 span 
+{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background:rgb(200, 100, 100);
+    border-left: 1px solid #000;
+    animation: maquina 5s infinite alternate steps(100);
+}
+
+body
+{
+    background-color: chocolate;
+}
+
+@keyframes maquina
+{
+    from{
+        width: 100%;
+    }
+    to
+    {
+        width: 0;
+    }
+}
+
+
+/*
+h3 span
+{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: tomato;
+    border-left: 1px solid #000;
+    animation: maquina 5s infinite alternate;
+}
+
+@keyframes maquina
+{
+    from {
+        width: 100%;
+    }
+    to
+    {
+        width: 0%;
+    }
+
+*/
